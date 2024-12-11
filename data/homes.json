@@ -1,0 +1,38 @@
+{
+    "18": {
+        "id": 18,
+        "houseName": "Chakri's House",
+        "price": 400,
+        "location": "Chicago, IL",
+        "rating": 4,
+        "photoUrl": "https://images.squarespace-cdn.com/content/v1/65a8583b3f2bb32732bff587/63ff3986-3c95-4422-bdaa-6a373b71140d/Custom-Luxury-Home-Dallas.jpg",
+        "isFavorite": true
+    },
+    "19": {
+        "id": 19,
+        "houseName": "Abhyas' House",
+        "price": 102,
+        "location": "Chennai, TN",
+        "rating": 3,
+        "photoUrl": "https://media.newhomeinc.com/348/2022/11/30/The-Apex-Georgian-Elevation-1.jpeg?width=1000&ois=0360179&fit=bounds&height=666",
+        "isFavorite": false
+    },
+    "20": {
+        "id": 20,
+        "houseName": "Drishti's House",
+        "price": 400,
+        "location": "Boston, MA",
+        "rating": 5,
+        "photoUrl": "https://www.goldcoastrealty-chicago.com/images/dreamstime_s_43057775_800.jpg",
+        "isFavorite": true
+    },
+    "21": {
+        "id": 21,
+        "houseName": "Vivek's House",
+        "price": 499,
+        "location": "Everett, WA",
+        "rating": 2,
+        "photoUrl": "https://www.bhg.com/thmb/H9VV9JNnKl-H1faFXnPlQfNprYw=/1799x0/filters:no_upscale():strip_icc()/white-modern-house-curved-patio-archway-c0a4a3b3-aa51b24d14d0464ea15d36e05aa85ac9.jpg",
+        "isFavorite": false
+    }
+}

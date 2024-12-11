@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Error</title>
+  <link rel="stylesheet" href="/styles/output.css">
+</head>
+<body class="bg-slate-100">
+  <div class="mt-[30vh] w-fit mx-auto">
+    <h1 class="text-start font-bold text-pink-600 text-2xl">Error:</h1>
+    <ul class="list-disc">
+      <% errorMessage.forEach((msg) => { %>
+        <li class="text-start font-light text-pink-600 text-2xl"><%= msg %></li>
+      <% });%>
+   </ul>
+  </div>
+  <a href="/homes" class="block text-center mt-8 w-fit mx-auto px-3 py-2 bg-pink-500 rounded-xl text-white font-light hover:scale-105 transition-all duration-300">Go to Home</a>
+</body>
+</html>

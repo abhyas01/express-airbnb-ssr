@@ -1,0 +1,39 @@
+<%- include('../partials/head.ejs') %>
+</head>
+<%- include('../partials/nav.ejs') %>
+<body class="bg-slate-100">
+  <h1 class="text-pink-700 mx-auto text-3xl w-fit mt-10 mb-10 font-extralight break-words">
+    <%= edit ? "Edit " + home.houseName :  "Add your Home" %>
+  </h1>
+  <form action="/host/<%= edit ? "edit-home" : "add-home" %>" method="POST"
+  class="flex flex-col mx-auto bg-pink-200 w-2/3 sm:w-3/5 md:w-6/12 lg:w-1/3 min-w-fit px-10 py-12 rounded-2xl shadow-xl hover:bg-pink-300 transition-all duration-300 group mb-20"
+  >
+    <% if(edit){ %>
+      <input class="hidden" name="id" value="<%= home.id %>">
+    <% } %>
+    <label for="house" class="mb-1 text-lg font-light text-pink-900 hover:text-pink-800 text-nowrap px-1 w-11/12 mx-auto">House Name</label>
+    <input type="text" placeholder="House Name" name="houseName" id="house" value="<%= edit ? home.houseName : "" %>"
+    class="px-2 py-3 w-11/12 mx-auto rounded-2xl font-extralight focus:outline-pink-400 mb-5"
+    >
+    <label for="price" class="mb-1 text-lg font-light text-pink-900 hover:text-pink-800 text-nowrap px-1 w-11/12 mx-auto">Price</label>
+    <input type="number" placeholder="Price" name="price" id="price" value="<%= edit ? home.price : "" %>"
+    class="px-2 py-3 w-11/12 mx-auto rounded-2xl font-extralight focus:outline-pink-400 mb-5"
+    >
+    <label for="location" class="mb-1 text-lg font-light text-pink-900 hover:text-pink-800 text-nowrap px-1 w-11/12 mx-auto">Location</label>
+    <input type="text" placeholder="Location" name="location" id="location" value="<%= edit ? home.location : "" %>"
+    class="px-2 py-3 w-11/12 mx-auto rounded-2xl font-extralight focus:outline-pink-400 mb-5"
+    >
+    <label for="rating" class="mb-1 text-lg font-light text-pink-900 hover:text-pink-800 text-nowrap px-1 w-11/12 mx-auto">Rating</label>
+    <input type="number" placeholder="Rating" name="rating" id="rating" value="<%= edit ? home.rating : "" %>"
+    class="px-2 py-3 w-11/12 mx-auto rounded-2xl font-extralight focus:outline-pink-400 mb-5"
+    >
+    <label for="photoUrl" class="mb-1 text-lg font-light text-pink-900 hover:text-pink-800 text-nowrap px-1 w-11/12 mx-auto">Photo URL</label>
+    <input type="text" placeholder="Photo URL" name="photoUrl" id="photoUrl" value="<%= edit ? home.photoUrl : "" %>"
+    class="px-2 py-3 w-11/12 mx-auto rounded-2xl font-extralight focus:outline-pink-400 mb-5"
+    >
+    <button type="submit" class="w-fit mx-auto mt-12 bg-pink-500 hover:scale-110 group-hover:bg-pink-600 px-6 py-2 rounded-xl transition-all duration-300 text-white font-light">
+      <%= edit ? "Done" : "Submit" %>
+    </button>
+  </form>
+</body>
+</html>
